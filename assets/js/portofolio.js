@@ -184,3 +184,17 @@ const data = [
     description: "",
   },
 ];
+
+function filterData(filter) {
+  let tempData = [];
+  if (filter === "*") {
+    tempData = data;
+  } else {
+    data.forEach((value, index) => {
+      if (value.filter === filter) {
+        tempData.push(data[index]);
+      }
+    });
+  }
+  return tempData;
+}
