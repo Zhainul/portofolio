@@ -373,6 +373,35 @@
       </div>
     </footer>
 
+    <div class="modal modal-preview" tabindex="-1">
+      <div class="modal-dialog modal-dialog-centered modal-xl">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Preview</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <img src="" alt="preview" class="image-modal" width="100%" />
+          </div>
+          <!-- <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+            <button type="button" class="btn btn-primary">Save changes</button>
+          </div> -->
+        </div>
+      </div>
+    </div>
+
     <!-- Scroll Top -->
     <a
       href="#"
@@ -416,6 +445,7 @@
         document.getElementById("tes0").parentNode.style =
           "position: relative;";
       }
+
       function load_data(params) {
         let html = "";
         $.each(params, function (indexInArray, valueOfElement) {
@@ -431,12 +461,10 @@
           html += "<h4>" + valueOfElement.title + "</h4>";
           html += "<p>" + valueOfElement.description + "</p>";
           html +=
-            "<a href='" +
-            valueOfElement.image +
-            "' title='" +
+            "<a href='javascript:void(0)' title='" +
             valueOfElement.title +
             "' data-gallery='portfolio-gallery-app' class='glightbox preview-link'";
-          html += "><i class='bi bi-zoom-in'></i></a>";
+          html += ` onclick="preview('${valueOfElement.image}')"><i class='bi bi-zoom-in'></i></a>`;
           html +=
             "<a href='" +
             valueOfElement.details +
@@ -450,13 +478,23 @@
         setRelativePosition();
       }
 
+      function preview(img) {
+        $(".modal-body .image-modal").attr("src", img);
+        $(".modal-preview").modal("show");
+      }
+
       $(document).ready(function () {
         load_data(filterData("*"));
         document
           .querySelectorAll(".isotope-filters li")
           .forEach(function (filter) {
             filter.addEventListener("click", function () {
-              load_data(filterData(this.getAttribute("data-filter")));
+              const key = this.getAttribute("data-filter");
+              if (key === "*") {
+                load_data(filterData("*"));
+              } else {
+                load_data(filterData("filter", key));
+              }
               setTimeout(setRelativePosition, 100);
             });
           });

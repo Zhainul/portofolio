@@ -185,16 +185,23 @@ const data = [
   },
 ];
 
-function filterData(filter) {
+function filterData(key, filter = "") {
   let tempData = [];
-  if (filter === "*") {
-    tempData = data;
-  } else {
-    data.forEach((value, index) => {
-      if (value.filter === filter) {
-        tempData.push(data[index]);
-      }
-    });
-  }
+  data.forEach((value, index) => {
+    switch (key) {
+      case "key":
+        if (value.key === filter) {
+          tempData.push(data[index]);
+        }
+        break;
+      case "filter":
+        if (value.filter === filter) {
+          tempData.push(data[index]);
+        }
+        break;
+      default:
+        tempData = data;
+    }
+  });
   return tempData;
 }
