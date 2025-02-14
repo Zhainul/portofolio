@@ -390,7 +390,7 @@
           <div class="modal-body">
             <img src="" alt="preview" class="image-modal" width="100%" />
             <hr />
-            <p>
+            <p class="text-start">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam,
               natus omnis est, mollitia reiciendis atque ipsum vero nemo
               voluptatum ratione illum praesentium. Dicta numquam eos cum
@@ -458,7 +458,6 @@
             "' class='img-fluid' alt='image'/>";
           html += "<div class='portfolio-info'>";
           html += "<h4>" + valueOfElement.title + "</h4>";
-          html += "<p>" + valueOfElement.description + "</p>";
           html +=
             "<a href='javascript:void(0)' title='" +
             valueOfElement.title +
@@ -475,6 +474,7 @@
       function preview(key) {
         const detail = filterData("key", key);
         $(".modal-header .modal-title").html(detail[0]?.title);
+        $(".modal-body p").html(detail[0]?.description);
         $(".modal-body .image-modal").attr("src", detail[0]?.image);
         $(".modal-preview").modal("show");
       }
