@@ -55,7 +55,7 @@
         <a href="index.html" class="logo d-flex align-items-center">
           <!-- Uncomment the line below if you also wish to use an image logo -->
           <!-- <img src="assets/img/logo.png" alt=""> -->
-          <h1 class="sitename">Portofolio</h1>
+          <h1 class="sitename">Portfolio</h1>
         </a>
 
         <nav id="navmenu" class="navmenu">
@@ -374,7 +374,9 @@
     </footer>
 
     <div class="modal modal-preview" tabindex="-1">
-      <div class="modal-dialog modal-dialog-centered modal-xl">
+      <div
+        class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-xl"
+      >
         <div class="modal-content">
           <div class="modal-header">
             <h5 class="modal-title">Preview</h5>
@@ -387,17 +389,14 @@
           </div>
           <div class="modal-body">
             <img src="" alt="preview" class="image-modal" width="100%" />
+            <hr />
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam,
+              natus omnis est, mollitia reiciendis atque ipsum vero nemo
+              voluptatum ratione illum praesentium. Dicta numquam eos cum
+              exercitationem iste, reiciendis quia.
+            </p>
           </div>
-          <!-- <div class="modal-footer">
-            <button
-              type="button"
-              class="btn btn-secondary"
-              data-bs-dismiss="modal"
-            >
-              Close
-            </button>
-            <button type="button" class="btn btn-primary">Save changes</button>
-          </div> -->
         </div>
       </div>
     </div>
@@ -464,12 +463,7 @@
             "<a href='javascript:void(0)' title='" +
             valueOfElement.title +
             "' data-gallery='portfolio-gallery-app' class='glightbox preview-link'";
-          html += ` onclick="preview('${valueOfElement.image}')"><i class='bi bi-zoom-in'></i></a>`;
-          html +=
-            "<a href='" +
-            valueOfElement.details +
-            "' title='More Details' class='details-link'>";
-          html += "<i class='bi bi-link-45deg'></i></a>";
+          html += ` onclick="preview('${valueOfElement.key}')"><i class='bi bi-zoom-in'></i></a>`;
           html += "</div>";
           html += "</div>";
         });
@@ -478,8 +472,10 @@
         setRelativePosition();
       }
 
-      function preview(img) {
-        $(".modal-body .image-modal").attr("src", img);
+      function preview(key) {
+        const detail = filterData("key", key);
+        $(".modal-header .modal-title").html(detail[0]?.title);
+        $(".modal-body .image-modal").attr("src", detail[0]?.image);
         $(".modal-preview").modal("show");
       }
 
