@@ -5,7 +5,8 @@ const data = [
     filter: "filter-web",
     image: "assets/img/portfolio/purchasing.png",
     details: "portfolio-details.html?data=purchasing",
-    description: "",
+    description:
+      "The system used by the purchasing department of PT Kosmetika Global Indonesia in processing Purchase Order (PO) data for raw materials, packaging materials, and technical goods. This system is based on a website that can be accessed anytime and anywhere by the purchasing team. With this system, the purchasing team can easily create PO documents, print PO documents, and monitor the arrival of materials at the warehouse.",
   },
   {
     title: "Warehouse Management System",
@@ -13,7 +14,8 @@ const data = [
     filter: "filter-web",
     image: "assets/img/portfolio/wms.png",
     details: "portfolio-details.html?data=wms",
-    description: "",
+    description:
+      "The system used by the warehouse department of PT Kosmetika Global Indonesia in the inventory management process. This system is web-based so that it is easily accessible by the warehouse team. This system can help users in the inventory management process in the warehouse starting from the process of receiving material arrivals, the process of mutating materials between departments and plants and finding the location of material placement on warehouse shelves.",
   },
   {
     title: "Marketing System",
@@ -21,7 +23,8 @@ const data = [
     filter: "filter-web",
     image: "assets/img/portfolio/npd.png",
     details: "portfolio-details.html?data=marketing",
-    description: "",
+    description:
+      "The system is used by the marketing department of PT Kosmetika Global Indonesia in managing customer data such as brand, packaging, sample requests to product delivery. This system also helps the process of monitoring and tracking product manufacturing from the initial sample request to the product delivery process to the customer.",
   },
   {
     title: "IoT Monitoring",
@@ -184,3 +187,24 @@ const data = [
     description: "",
   },
 ];
+
+function filterData(key, filter = "") {
+  let tempData = [];
+  data.forEach((value, index) => {
+    switch (key) {
+      case "key":
+        if (value.key === filter) {
+          tempData.push(data[index]);
+        }
+        break;
+      case "filter":
+        if (value.filter === filter) {
+          tempData.push(data[index]);
+        }
+        break;
+      default:
+        tempData = data;
+    }
+  });
+  return tempData;
+}
