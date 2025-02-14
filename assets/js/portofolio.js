@@ -189,22 +189,5 @@ const data = [
 ];
 
 function filterData(key, filter = "") {
-  let tempData = [];
-  data.forEach((value, index) => {
-    switch (key) {
-      case "key":
-        if (value.key === filter) {
-          tempData.push(data[index]);
-        }
-        break;
-      case "filter":
-        if (value.filter === filter) {
-          tempData.push(data[index]);
-        }
-        break;
-      default:
-        tempData = data;
-    }
-  });
-  return tempData;
+  return data.filter((item) => !filter || item[key] === filter);
 }
