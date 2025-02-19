@@ -41,7 +41,8 @@ const data = [
     filter: "filter-mobile",
     image: "assets/img/portfolio/iot.png",
     details: "portfolio-details.html?data=iot",
-    description: "",
+    description:
+      "&nbsp;&nbsp;&nbsp;&nbsp;IoT monitoring application is an application used for the process of monitoring temperature and machine control. This application is used by the engineering and production team to report if there is a problem with the production machine so that it can be handled immediately.",
   },
   {
     title: "Warehouse Delivery Order",
@@ -49,7 +50,8 @@ const data = [
     filter: "filter-mobile",
     image: "assets/img/portfolio/wdo.png",
     details: "portfolio-details.html?data=wdo",
-    description: "",
+    description:
+      "&nbsp;&nbsp;&nbsp;&nbsp;Warehouse Delivery Order (WDO) application is an application used by the production and warehouse teams for the process of handing over finished products from the production room to the warehouse and the delivery process from the warehouse to the customer. ",
   },
   {
     title: "Church Management System",
@@ -75,7 +77,8 @@ const data = [
     filter: "filter-web",
     image: "assets/img/portfolio/skl.png",
     details: "portfolio-details.html?data=skl",
-    description: "",
+    description:
+      "&nbsp;&nbsp;&nbsp;&nbsp;E-SKL is used to manage student SKL (graduation certificate) data at SMKS PGRI Pakisaji Malang Regency. The system will calculate student grades from grade 1 to graduation then display the student's final grade and print the SKL document. This application is web-based so that it can be accessed by students to print SKL documents anywhere when needed.",
   },
   {
     title: "E-SPP",
@@ -101,7 +104,8 @@ const data = [
     filter: "filter-web",
     image: "assets/img/portfolio/pinlab.png",
     details: "portfolio-details.html?data=pinlab",
-    description: "",
+    description:
+      "&nbsp;&nbsp;&nbsp;&nbsp;This application is used to manage data on computer laboratory usage at Universitas PGRI Kanjuruhan Malang. Users can see the laboratory usage schedule and apply for a laboratory loan then the admin will approve the request.",
   },
   {
     title: "Inventory Management System",
@@ -118,7 +122,7 @@ const data = [
     filter: "filter-web",
     image: "assets/img/portfolio/milih-siswa.png",
     details: "portfolio-details.html?data=milih-siswa",
-    description: `The "milih siswa" application is used for the classification process of students based on the prediction of the timeliness of their graduation based on the web. This application uses the k-means clustering method with several predetermined criteria. By using this application, lecturers can see percentage predictions and a list of students who graduate on time and graduate not on time.`,
+    description: `&nbsp;&nbsp;&nbsp;&nbsp;The "milih siswa" application is used for the classification process of students based on the prediction of the timeliness of their graduation based on the web. This application uses the k-means clustering method with several predetermined criteria. By using this application, lecturers can see percentage predictions and a list of students who graduate on time and graduate not on time.`,
   },
   {
     title: "Landak District Website",
@@ -126,7 +130,8 @@ const data = [
     filter: "filter-web",
     image: "assets/img/portfolio/landak.png",
     details: "portfolio-details.html?data=landak",
-    description: "",
+    description:
+      "&nbsp;&nbsp;&nbsp;&nbsp;landing page website that is used for the promotion of tourist attractions in Landak district. information presented such as tourist data, facilities at tourist attractions, routes and detailed descriptions of tourist attractions. tourist attractions managers can register new tourist attractions on the website by filling out the tourist registration form that has been provided on the website and then will be approved by the administrator.",
   },
   {
     title: "M-Komplain",
@@ -135,7 +140,7 @@ const data = [
     image: "assets/img/portfolio/komplain.png",
     details: "portfolio-details.html?data=komplain",
     description:
-      "&nbsp;&nbsp;&nbsp;&nbsp;Aplikasi M-Komplain adalah aplikasi yang digunakan untuk membantu proses pelaporan komplain dan monitoring perbaikan sarana prasarana antara unit perlengkapan dengan unit yang lain di Universitas Kanjuruhan Malang. Aplikasi ini terbagi menjadi 2 platform yaitu android dan website. Untuk platform website digunakan untuk proses mastering, dan reset password pengguna sedangkan untuk platform android digunakan untuk proses pelaporan komplain, melihat daftar laporan, monitoring perbaikan dan ubah password sistem. Terdapat beberapa hak akses yang terdapat pada aplikasi yaitu administrator, kepala unit, kepala bagian perlengkapan, staff unit, dan teknisi perlengkapan.",
+      "&nbsp;&nbsp;&nbsp;&nbsp;This application is used to help the process of reporting complaints and monitoring the repair of infrastructure facilities between the equipment unit and other units at Kanjuruhan University Malang. This application is divided into 2 platforms, namely android and website. The website platform is used for the mastering process, and resetting user passwords while the android platform is used for the complaint reporting process, viewing the report list, monitoring repairs and changing system passwords. There are several access rights contained in the application, namely administrator, head of unit, head of equipment, unit staff, and equipment technicians.",
   },
   {
     title: "E-RAPORT",
@@ -175,7 +180,8 @@ const data = [
     filter: "filter-web",
     image: "assets/img/portfolio/kaffah.png",
     details: "portfolio-details.html?data=kaffah",
-    description: "",
+    description:
+      "&nbsp;&nbsp;&nbsp;&nbsp;Landing page website that is used to introduce SMK AL-KAFFAAH. information presented such as school profiles, news, school facilities, tuition fees and other information. The process of registering new students can be done directly by filling out the registration form provided on the website. Administrators can manage website data such as school information and registration data on the administrator page.",
   },
   {
     title: "Decision Support System for PIP Scholarship Recipients",
