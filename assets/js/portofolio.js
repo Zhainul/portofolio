@@ -176,7 +176,7 @@ const data = [
     image: "assets/img/portfolio/pupus.png",
     details: "portfolio-details.html?data=pupus",
     description:
-      "&nbsp;&nbsp;&nbsp;&nbsp;PUPUS is an application used for the selection process of campus boys and girls at PGRI Kanjuruhan University Malang. The selection stages are set by the admin including assessment weights, quiz questions and judges. Candidates will take part in the selection process and will be assessed by the jury at each stage until the final score of each candidate is obtained.",
+      "&nbsp;&nbsp;&nbsp;&nbsp;PUPUS is an application used for the selection process of campus boys and girls at PGRI Kanjuruhan University Malang. The selection stages are arranged by the admin including assessment points, quiz questions and judges. Candidates will take part in the selection process and will be assessed by the jury at each stage until the final score of each candidate is obtained.",
   },
   {
     title: "AL-KAFFAAH website",
