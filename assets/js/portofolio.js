@@ -31,7 +31,7 @@ const data = [
     key: "marketing",
     filter: "filter-web",
     image: "assets/img/portfolio/npd.png",
-    details: "portfolio-details.html?data=marketing",
+    details: "portfolio-details.html?data=qc",
     description:
       "&nbsp;&nbsp;&nbsp;&nbsp;The system is used by the quality control department of PT Kosmetika Global Indonesia in the process of validating the arrival of raw materials and packaging. This system also helps the process of printing material qr code labels and monitoring the expiration date of raw materials.",
   },
@@ -148,7 +148,8 @@ const data = [
     filter: "filter-web",
     image: "assets/img/portfolio/raport.png",
     details: "portfolio-details.html?data=raport",
-    description: "",
+    description:
+      "&nbsp;&nbsp;&nbsp;&nbsp;E-Raport is a website-based application that is used to manage student score data to print school report cards. With this application, the process of processing student value data becomes easier and reduces the risk of data loss. Student guardians can also monitor student grades easily because the website-based system is easily accessible from home.",
   },
   {
     title: "APBD Management System",
@@ -156,7 +157,8 @@ const data = [
     filter: "filter-web",
     image: "assets/img/portfolio/apbd.png",
     details: "portfolio-details.html?data=apbd",
-    description: "",
+    description:
+      "&nbsp;&nbsp;&nbsp;&nbsp;APBD management system is a web-based system used for the process of monitoring the use of APBD funds in Glanggang village. With this system, the village head can see data on the use of APBD funds according to their financial category on the graph in the system. The process of printing usage report documents by employees can also be done easily on the system with complete data.",
   },
   {
     title: "Pondo District Website",
@@ -164,7 +166,8 @@ const data = [
     filter: "filter-web",
     image: "assets/img/portfolio/pondo.png",
     details: "portfolio-details.html?data=pondo",
-    description: "",
+    description:
+      "&nbsp;&nbsp;&nbsp;&nbsp;The landing page website is used to display information about Pondo Village. Information displayed on the website such as organizational structure, vision and mission and village history. The system also helps residents to apply for village letters and village head signatures. Village officials can print village letters on the system and do not need to make letters manually because the letter data has been integrated with citizen data.",
   },
   {
     title: "PUPUS",
@@ -172,7 +175,8 @@ const data = [
     filter: "filter-web",
     image: "assets/img/portfolio/pupus.png",
     details: "portfolio-details.html?data=pupus",
-    description: "",
+    description:
+      "&nbsp;&nbsp;&nbsp;&nbsp;PUPUS is an application used for the selection process of campus boys and girls at PGRI Kanjuruhan University Malang. The selection stages are set by the admin including assessment weights, quiz questions and judges. Candidates will take part in the selection process and will be assessed by the jury at each stage until the final score of each candidate is obtained.",
   },
   {
     title: "AL-KAFFAAH website",
@@ -189,7 +193,8 @@ const data = [
     filter: "filter-web",
     image: "assets/img/portfolio/beasiswa.png",
     details: "portfolio-details.html?data=beasiswa",
-    description: "",
+    description:
+      "&nbsp;&nbsp;&nbsp;&nbsp;The system used for the decision-making process of PIP scholarship recipients at SMP Negeri 1 Trawas. By using a decision support system, the decision-making process can be done easily. Students upload the required documents according to the criteria then the admin verifies the data. The system will calculate the student's final score and display a list of students who are eligible to receive PIP scholarships.",
   },
   {
     title: "Project Tracker",
